@@ -22,6 +22,7 @@ app.use(session({
 // API Endpoints
 // Auth:
 app.get('/auth/login', authCtrl.login)
+app.get('/auth/logout', authCtrl.logout)
 
 // Database & Server Connection
 massive({
